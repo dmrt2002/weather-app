@@ -30,13 +30,13 @@ function displayResults(weather) {
     weather_el.innerText = weather.weather[0].main;
 
     let hilow = document.querySelector('.hi-low');
-    hilow.innerText = `${weather.main.temp_min}  °C / ${weather.main.temp_max}`;
+   hilow.innerText = `${Math.round(weather.main.temp_min - 273.15)} °C / ${Math.round(weather.main.temp_max - 273.15)}`;
 
 }
 
 function dateBuilder (d) {
-    let months = ["january","february", "march", "april" , "may" , "june" , "july","august","september", "october" , "november" , "december"];
-    let days = ["sunday","monday", "tuesday" , "wednesday" , "thursday","friday","saturday"];
+     let months = ["January","February", "March", "April" , "May" , "June" , "July","August","September", "October" , "november" , "december"];
+    let days = ["Sunday","Monday", "Tuesday" , "Wednesday" , "Thursday","Friday","Saturday"];
 
     let day = days[d.getDay()];
     let date = d.getDate();
