@@ -33,17 +33,12 @@ function getresults(query){
     let hilow = document.querySelector('.hi-low');
     hilow.innerText = `${Math.round(weather.main.temp_min - 273.15)} °C / ${Math.round(weather.main.temp_max - 273.15)}`;
     
+    request.innerHTML = "";
+    
     }).catch(function(error) {
         request.innerHTML = "Enter a Valid City Name"
     });
       
-}
-
-function displayResults(weather) {
-    request.innerHTML = "";
-    console.log(weather);
-
-    
 }
 
 function dateBuilder (d) {
@@ -57,4 +52,3 @@ function dateBuilder (d) {
 
     return `${day}  ${date} ${month}  ${year}`;
 }
-
