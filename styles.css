@@ -121,5 +121,6 @@ section .date {
       align-items: center;
       text-align: center;
       font-style: italic;
-      font-size: larger;
+      font-size: 40px;
+      font-weight: 600;
   }
