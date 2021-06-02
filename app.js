@@ -1,6 +1,5 @@
 const searchbox = document.querySelector(".search-box");
 const request = document.querySelector(".request");
-var xhttp = new XMLHttpRequest();
 
 function Setquery() {
     getresults(searchbox.value);
