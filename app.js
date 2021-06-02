@@ -5,7 +5,7 @@ function Setquery() {
 }
 
 function getresults(query){
-    const url = `http://api.openweathermap.org/data/2.5/weather?q=${query}&appid=886705b4c1182eb1c69f28eb8c520e20`;
+    const url = `https://api.openweathermap.org/data/2.5/weather?q=${query}&appid=886705b4c1182eb1c69f28eb8c520e20`;
     fetch(url)
     .then(weather => {
         return weather.json();
